@@ -13,7 +13,7 @@ for y in menu:
 
 kontak={}
 loop=0
-while loop<4:
+while loop!=3:
     loop=0
     x=int(input("### Pilihan menu: "))
     
@@ -35,10 +35,11 @@ while loop<4:
 
     else:
         print("---Terima kasih, keluar program---")
-        loop=5
+        loop=3
     
     for y in menu:
-        print(y)
+        if x!=3:
+            print(y)
     
 
 
