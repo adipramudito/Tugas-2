@@ -1,9 +1,9 @@
 print("Selamat Datang!")
 menu=[]
-menu0="---Menu---"
+menu0="\n ---Menu---"
 menu1="1. Daftar Kontak"
 menu2="2. Tambah Kontak"
-menu3="3. Keluar"
+menu3="3. Keluar \n"
 menu.append(menu0)
 menu.append(menu1)
 menu.append(menu2)
@@ -19,7 +19,7 @@ while loop<4:
     
     if x==1:
         if kontak=={}:
-            print("XXX Kontak kosong XXXX")
+            print("\n XXX Kontak kosong XXXX \n")
         else:    
             for nama,no_hp in kontak.items():
                 print(nama,no_hp)
@@ -28,7 +28,7 @@ while loop<4:
         nama=input("Nama: ")
         no_hp=input("Nomor HP: ")
         kontak[nama]=no_hp
-        print("***Kontak berhasil ditambahkan***")
+        print("\n ***Kontak berhasil ditambahkan*** \n")
 
     elif x<1 or x>3:
         print("Menu tidak tersedia.")
@@ -38,7 +38,7 @@ while loop<4:
         loop=5
     
     for y in menu:
-        print("\n",y,"\n")
+        print(y)
     
 
 
